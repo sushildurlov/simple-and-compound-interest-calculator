@@ -1,18 +1,6 @@
 #include <iostream> // input/output stream
-#include "new/myheader.h" // use " " instead of < > so the compiler knows that it's a local header file
-
+#include "new/myheader.h" 
 using namespace std;
-float a,b,c;
-void data(float *a, float *b, float *c )
-{
-    cout<< "enter your principle : ";
-    cin>>*a;
-    cout<< "enter your time : ";
-    cin>>*b;
-    cout<< "enter your rate : ";
-    cin>>*c;
-
-}
 int main()
 {
     int x;
@@ -20,7 +8,8 @@ int main()
         <<"select option\n"
         <<"1)Simple interest\n"
         <<"2)Compound Interest\n";
-    cin>>x;\
+        
+    cin>>x;
     switch (x)
     {
         case 1:
@@ -37,9 +26,6 @@ int main()
 
 
     }
-
-    
-
     return 0;
-
+    
 }
